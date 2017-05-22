@@ -23,10 +23,6 @@ def process(request):
 
 def results(request):
     num = int(request.session['number'])
-    # context = {
-    #     'number' : range(num),
-    #     'values' : VALUES
-    # }
     context = {
         'number' : num,
         'values' : VALUES
